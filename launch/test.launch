@@ -1,0 +1,8 @@
+<launch>
+
+<node pkg="rangefinder" type="rangefinder_node" name="rangefinder_node1" clear_params="true"/>
+<node pkg="rangefinder" type="publisher_test" name="publisher_test1" clear_params="true"/>
+<node pkg="rangefinder" type="frame_broadcast" name="frame_broadcast1" clear_params="true"/>
+<node pkg="rviz" type="rviz" name="rviz1" args="-d $(find rangefinder/launch/range_map_viewer.rviz"/>
+
+</launch>
